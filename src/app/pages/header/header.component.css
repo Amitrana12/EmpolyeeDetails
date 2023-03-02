@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  header {
+    background: #136c72;
+    padding: 1em 0;
+  }
+  
+  .logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 0.5em;
+  }
+  
+  .nav__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .nav__link {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .nav__link:hover {
+    opacity: 0.75;
+  }
+  
+  .nav__link--button {
+    background: #fff;
+    color: #136c72;
+    padding: 0.25em 1em;
+    border-radius: 10rem;
+  }
+  
+  /**
+    * Layouting:
+    *    1. use `flex` to make nav__list horizontal.
+    *    2. add `margin-left` to each nav__item.
+    *    3. set `align-items: center` on nav__list to make items' vertical positions from flex-start to center.
+    *    4. set `justify-content: space-between` to make 2 child items be on two different sides.
+    */
+  .container {
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    
+    /* to make HOME align-left, you need to write this */
+    /*   flex-grow: 1;  // choose one: width or grow */
+    width: 100%;
+  }
+  
+  .nav__list {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav__item + .nav__item {
+    margin-left: 0.5em;
+  }
+  
+  /*
+    Another Header Implementation: https://codepen.io/aya-suz/pen/MWqKaoG
+  */

@@ -1,0 +1,93 @@
+*
+{
+    margin: 0;
+    font-family: sans-serif;
+}
+div video
+{
+    background:                url(https://png.pngtree.com/background/20210709/original/pngtree-gradient-blue-green-background-color-picture-image_648470.jpg)       no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    Z-index:-1;
+}
+header
+{
+    display: flex;
+}
+h2
+{
+    color: #FFF;
+    margin: 15px 40px;
+    flex-grow: 1;
+}
+h2 img
+{
+    width: 40px;
+}
+div ul li
+{
+    color: #FFF;
+    list-style: none;
+    display: inline-block;
+    margin: 30px 30px;
+    flex-grow: 9;
+    cursor: pointer;
+}
+.title
+{
+    color: #FFF;
+    font-size: 120px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 80px;
+}
+.title span
+{
+    color: #ff6C00;
+}
+.text1
+{
+    margin-top: 25px;
+    color: #FFF;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+.text1 button
+{
+    border: 3px solid #FFF;
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+.text2
+{
+    margin-top: 56px;
+    font-size: 18px;
+}
+@media (max-width:860px)
+{
+  div ul li
+  {
+      margin: 30px 10px;
+  }
+}
+@media (max-width:700px)
+{
+  div ul li
+  {
+      display:flex;
+  }
+}
+@media (max-width:500px)
+{
+  body
+  {
+      width: 500px;
+  }
+}
