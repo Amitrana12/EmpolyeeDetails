@@ -26,7 +26,8 @@ export class ShowStuComponent {
     this.student={
       StudentId:0,
       FullName:"",
-      Class:""
+      Class:"",
+      Country:""
     }
     this.modalTitle = "Add Student";
     this.activateAddEditStuCom = true;

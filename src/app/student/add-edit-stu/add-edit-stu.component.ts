@@ -12,6 +12,7 @@ export class AddEditStuComponent implements OnInit {
   StudentId:string = "";
   FullName: string ="";
   Class: string ="";
+  Country: string ="";
 
   constructor(private service: SharedService) { }
 
@@ -19,12 +20,14 @@ export class AddEditStuComponent implements OnInit {
     this.StudentId = this.student.StudentId;
     this.FullName = this.student.FullName;
     this.Class = this.student.Class;
+    this.Country = this.student.Country;
   }
 
   addStudent(){
     var val = {StudentId:this.StudentId,
       FullName:this.FullName,
-      Class:this.Class};
+      Class:this.Class,
+      Country:this.Country};
       this.service.addStudent(val).subscribe(res =>{
         alert(res.toString());
       })
@@ -33,7 +36,8 @@ export class AddEditStuComponent implements OnInit {
   updateStudent(){
     var val = {StudentId:this.StudentId,
       FullName:this.FullName,
-      Class:this.Class};
+      Class:this.Class,
+      Country:this.Country};
       this.service.updateStudent(val).subscribe(res =>{
         alert(res.toString());
     })
