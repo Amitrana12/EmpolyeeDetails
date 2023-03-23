@@ -11,11 +11,10 @@ import { SharedService } from "./shared.service";
 import { FormsModule,ReactiveFormsModule } from "@angular/forms";
 import { DepartmentComponent } from './department/department.component';
 import { AddEditDepComponent } from './department/add-edit-dep/add-edit-dep.component';
-//import { DepartmentComponent } from './department/department.component';
 import { ShowDepComponent } from './department/show-dep/show-dep.component';
 import { HeaderComponent } from './pages/header/header.component';
 import { FooterComponent } from './pages/footer/footer.component';
-//import { AddEditDepComponent } from './department/add-edit-dep/add-edit-dep.component';
+import { RegistrationsComponent } from './pages/registrations/registrations.component';
 
 @NgModule({
   declarations: [
@@ -24,8 +23,12 @@ import { FooterComponent } from './pages/footer/footer.component';
     ShowStuComponent,
     AddEditStuComponent,
     DepartmentComponent,
+    RegistrationsComponent ,
     ShowDepComponent,   
-    AddEditDepComponent, HeaderComponent, FooterComponent   
+    AddEditDepComponent, 
+    HeaderComponent, 
+    FooterComponent
+      
   ],
   imports: [
     BrowserModule,
